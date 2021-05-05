@@ -1,0 +1,36 @@
+
+.border{
+    
+    border-radius: 30px;
+}
+button{
+    border: solid #acb950;
+    background-color: #acb950;
+}
+button:hover{
+    border: solid #acb950;
+    background-color: #556B2F;
+}
+
+a{
+    color: #acb950;
+}
+
+a:hover{
+    color: white;
+}
+
+.img-br{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KFGrYMa-1HGWt9xVy3oi3rZJEnBgDXnf5HlfFuGujLauzOShiWujDWinkZuxDZGB-Ms&usqp=CAU');
+}
+
+
+.resp{
+    min-height: 1080px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KFGrYMa-1HGWt9xVy3oi3rZJEnBgDXnf5HlfFuGujLauzOShiWujDWinkZuxDZGB-Ms&usqp=CAU');
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+
+}

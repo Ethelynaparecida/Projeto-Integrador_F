@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+.ve {
+    color: #556B2F;
+}
+
+.vebg {
+    background-color: #556B2F;
+}
+
+.vc {
+    color: #acb950;
+}
+
+.vcbg {
+    color: #acb950;
+}
+
+div{
+    font-family: 'Font Awesome 5 Pro'
+}
