@@ -14,6 +14,7 @@ export class CadastrarComponent implements OnInit {
   confirmarSenha: string
   tipoUsuario: string
 
+  
 
   constructor(
     private authService: AuthService,
