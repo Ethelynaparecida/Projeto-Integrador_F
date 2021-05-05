@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
@@ -13,6 +14,7 @@ export class CadastrarComponent implements OnInit {
   user: User = new User()
   confirmarSenha: string
   tipoUsuario: string
+  
 
   
 
@@ -23,6 +25,7 @@ export class CadastrarComponent implements OnInit {
 
   ngOnInit(){
     window.scroll(0,0)
+    
   }
 
   confirmSenha(event: any){
@@ -31,7 +34,8 @@ export class CadastrarComponent implements OnInit {
   tipoUser(event:any){
     this.tipoUsuario = event.target.value
   }
-  cadastrar(){
+
+   cadastrar(){
     this.user.tipo = this.tipoUsuario
 
     if (this.user.senha != this.confirmarSenha){
