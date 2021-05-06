@@ -16,6 +16,12 @@
     border: solid #acb950;
     background-color: #556B2F;
   }
+  .atencao input:focus:invalid{
+    background: #fff url(../../assets/img/sinal-de-atencao.png) no-repeat 98% center;
+    box-shadow:  0 0 5px #d45252;
+    border-color: #b03535;
+  
+  }
 
   a {
     color: #acb950;
