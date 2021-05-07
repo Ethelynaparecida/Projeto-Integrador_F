@@ -1,1 +1,92 @@
-<p>comunidade works!</p>
+<nav class="navbar navbar-expand-lg navbar-light " id="bg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <img src="https://i.imgur.com/GlEacpd.png?" class="imgLogo ml-5 mr-5" alt="">
+  
+  <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
+      
+    <ul class="navbar-nav mr-auto align-items-center">
+      <li class="nav-item ">
+        <a class="nav-link mr-5" href="#">
+            <p class="font-weight-bold text-white">Home</p>  <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-5" href="">
+          <p class="font-weight-bold text-white">Sobre nos</p></a>
+      </li>
+     
+      
+      <li class="nav-item">
+        <a class="nav-link " href="#"> <p class="font-weight-bold text-white">Contato</p></a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center">
+      <li class="nav-item pl-5">
+          <a href=""><p class="m-0 font-weight-bold text-white fs-16 mr-5">Login <i class="fas fa-sign-in-alt"></i></p></a>
+          
+        </li>
+
+    </ul>
+   
+  </div>
+</nav>
+<div class="container-fluid">
+
+      <div class="col-md-12 text-black">
+
+  
+        <h1 class="fs-54 text-center">comunidade
+        </h1>
+        <h5 class="fs-18 text-center">Veja aqui todos as comunidades cadastradas ou cadastre uma nova:</h5>
+        <div class="row d-flex justify-content-center mt-4 mb-5">
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="text-center" class="form-control" id="descricao" placeholder="Pesquise uma cominidade">
+            </div>
+  
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-light" >Cadastrar</button>
+            </div>
+           
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  <div class="container">
+  
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h2 class="text-center">Todas as comunidades</h2>
+      </div>
+    </div>
+  
+    <div class="row mt-3 mb-5 d-flex justify-content-center">
+      <div class="col-md-6">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">descricao</th>
+              <th scope="col">nome</th>
+              <th scope="col">sobre</th>
+            </tr>
+          </thead>
+            <tr *ngFor='let item of listaComunidades'>
+              <th>{{item.id}}</th>
+              <td>{{item.descricao}}</td>
+              <td>{{item.nome}}</td>
+              <td>{{item.sobre}}</td>
+              <td class="d-flex justify-content-end">
+                <button class="btn btn-info mr-3" [routerLink]="['/comunidade-edit', item.id]" >Editar</button>
+                <button class="btn btn-danger" [routerLink]="['/comunidade-delete', item.id]" >Apagar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
