@@ -4,13 +4,15 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ComunidadeComponent } from './comunidade/comunidade.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 const routes: Routes = [
   {path:'', redirectTo: 'entrar', pathMatch:'full'},
   {path:'entrar', component:EntrarComponent},
   {path:'cadastrar', component:CadastrarComponent},
   {path:'inicio', component: InicioComponent},
-  {path:'comunidade', component: ComunidadeComponent}
+  {path:'comunidade', component: ComunidadeComponent},
+  {path: 'sobreNos', component: SobreNosComponent}
 ];
 
 @NgModule({
