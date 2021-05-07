@@ -1,13 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { Comunidade } from '../model/Comunidade';
 
 @Component({
   selector: 'app-comunidade',
-  templateUrl: './comunidade.component.html',
+  templateUrl: './Comunidade.component.html',
   styleUrls: ['./comunidade.component.css']
 })
 export class ComunidadeComponent implements OnInit {
-
-  constructor() { }
+    comunidade : Comunidade = new Comunidade()
+    listaComunidades: Comunidade[]
+  
+  constructor(
+    
+  ) { }
 
   ngOnInit(): void {
   }
