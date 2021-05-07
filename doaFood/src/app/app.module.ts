@@ -11,6 +11,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { ComunidadeComponent } from './comunidade/comunidade.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ComunidadeComponent } from './comunidade/comunidade.component';
     MenuComponent,
     RodapeComponent,
     InicioComponent,
-    ComunidadeComponent
+    ComunidadeComponent,
+    SobreNosComponent
   ],
   imports: [
     BrowserModule,
