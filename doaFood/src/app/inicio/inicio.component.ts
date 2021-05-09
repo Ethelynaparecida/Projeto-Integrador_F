@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(
+  ) { }
+
+  ngOnInit(){
+    window.scroll(0,0)
+
   }
 
 }

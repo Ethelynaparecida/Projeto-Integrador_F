@@ -14,7 +14,7 @@ export class ComunidadeComponent implements OnInit {
     
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }
