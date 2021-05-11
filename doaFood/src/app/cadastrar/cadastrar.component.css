@@ -1,76 +1,77 @@
-.vebg{
+.vebg {
   border-radius: 30px;
 }
 
-  .border {
-    border-radius: 30px;
-  }
+.border {
+  border-radius: 30px;
+}
 
-  button {
-    border: solid #acb950;
-    background-color: #acb950;
-  }
+.bg-img {
+  background-image: url(../../assets/img/grad3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+}
 
-  button:hover {
-    
-    border: solid #acb950;
-    background-color: #556B2F;
-  }
-  .atencao input:focus:invalid{
-    background: #fff url(../../assets/img/sinal-de-atencao.png) no-repeat 98% center;
-    box-shadow:  0 0 5px #d45252;
-    border-color: #b03535;
-  
-  }
+button {
+  border: solid #acb950;
+  background-color: #acb950;
+}
 
-  a {
-    color: #acb950;
-  }
+button:hover {
+  border: solid #acb950;
+  background-color: #556B2F;
+}
 
-  a:hover {
-    color: white;
-  }
+a {
+  color: #acb950;
+}
 
-  .p-0 {
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-  }
+a:hover {
+  color: white;
+}
 
-  /*Estilo radio*/
-  .fancy label {
-    display: inline-flex;
-    align-items: baseline;
-  }
-    input[type=checkbox],
-    input[type=radio] {
-      position: relative;
-      appearance: none;
-      font-size: inherit;
-      width: 1em;
-      margin: 2px;
-      color: #acb950;
-      outline: none;
-      font-family: 'Font Awesome 5 Pro';
-      transition: 300ms ease-out;
-    }
-    input[type=radio]::after {
-        content: '\f111'; 
-        display: inline-block;
-        text-align: center;
-        width: 1em;
-      }
-  
-      input[type=radio]:checked::after {
-        font-weight: 900;
-      }
-      input[type=radio]:active {
-        transform: scale(.6);
-      }
+.p-0 {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
 
-    input[type=radio]:checked::after {
-      content: '\f192'; 
-    }
-  
+/*Estilo radio*/
 
+.fancy label {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+input[type=checkbox], input[type=radio] {
+  position: relative;
+  appearance: none;
+  font-size: inherit;
+  width: 1em;
+  margin: 2px;
+  color: #acb950;
+  outline: none;
+  font-family: 'Font Awesome 5 Pro';
+  transition: 300ms ease-out;
+}
+
+input[type=radio]::after {
+  content: '\f111';
+  display: inline-block;
+  text-align: center;
+  width: 1em;
+}
+
+input[type=radio]:checked::after {
+  font-weight: 900;
+}
+
+input[type=radio]:active {
+  transform: scale(.6);
+}
+
+input[type=radio]:checked::after {
+  content: '\f192';
+}

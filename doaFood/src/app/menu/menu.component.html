@@ -9,14 +9,13 @@
         
       <ul class="navbar-nav mr-auto align-items-center">
         <li class="nav-item ">
-          <a class="nav-link mr-5" href="#">
+          <a class="nav-link mr-5" routerLink="/inicio">
               <p class="font-weight-bold text-white">Home</p>  <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mr-5" href="">
-            <p class="font-weight-bold text-white">Sobre nos</p></a>
+          <a class="nav-link mr-5" routerLink="/sobreNos">
+            <p class="font-weight-bold text-white">Sobre nós</p></a>
         </li>
-       
         
         <li class="nav-item">
           <a class="nav-link " href="#"> <p class="font-weight-bold text-white">Contato</p></a>
@@ -25,7 +24,14 @@
 
       <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item pl-5">
-            <a href=""><p class="m-0 font-weight-bold text-white fs-16 mr-5">Login <i class="fas fa-sign-in-alt"></i></p></a>
+            <a href=""><p class="m-0 font-weight-bold text-white fs-16 mr-5" *ngIf="!tipoMenu()" routerLink="/entrar">Login <i class="fas fa-sign-in-alt"></i></p></a>
+            
+          </li>
+  
+      </ul>
+      <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <li class="nav-item pl-5">
+            <a href=""><p class="m-0 font-weight-bold text-white fs-16 mr-5" *ngIf="tipoMenu()" routerLink="/entrar">Sair<i class="fas fa-sign-in-alt"></i></p></a>
             
           </li>
   

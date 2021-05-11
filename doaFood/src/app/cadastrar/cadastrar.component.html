@@ -1,113 +1,114 @@
-<div class="container-fluid">
 
-    <div class="row  justify-content-md-center ">
+<div class=" bg-img">
+    <div class="container-fluid  pt-5">
 
-        <!-- Formulario de cadastro-->
-        <div class="col mt-2">
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-10 vebg p-3 text-light">
-
-                    <h2 class="text-center">Cadastro</h2>
-
-
-
-
-                    <div class="row justify-content-center align-items-center ">
-                        <div class="col-md-6 mr-0">
-                            <div class="form-group atencao">
-
-                                <label for="nome">Nome</label>
-                                <input [(ngModel)]='user.nome' (keyup)='validaNome($event)' class="form-control " type="text" name="myName" id="nome" placeholder="Nome completo"  required >
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 ">
-                            <div class="form-group atencao ">
-                                <label for="email">Email</label>
-                                <input [(ngModel)]='user.email' (keyup)='validaEmail($event)' class="form-control " type="text" name="email" id="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="row justify-content-center ">
-                        <div class="col-md-4">
-                            <div class="form-group atencao p-0">
-                                <label for="foto">Cidade</label>
-                                <input [(ngModel)]='user.cidade' (keyup)='validaCidade($event)' class="form-control " type="text" name="cidade"
-                                    id="cidade" placeholder="Cidade" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group atencao p-0">
-                                <label for="foto">Bairro</label>
-                                <input [(ngModel)]='user.bairro' (keyup)='validaBairro($event)' class="form-control " type="text" name="bairro"
-                                    id="bairro" placeholder="Bairro" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group atencao p-0">
-                                <label for="foto">Telefone</label>
-                                <input [(ngModel)]='user.telefone'  class="form-control " type="text" name="telefone"
-                                    id="telefone" placeholder="Telefone" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center ">
-                        <div class="col-md-6">
-                            <div class="form-group atencao p-0">
-                                <label for="senha">Senha</label>
-                                <input (keyup)='validaSenha($event)' class="form-control " type="password" name="senha"
-                                    id="senha" placeholder="Senha" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group atencao p-0">
-                                <label for="confirmSenha">Confirmar Senha</label>
-                                <input [(ngModel)]='user.senha' (keyup)='validaConfirmaSenha($event)' class="form-control " type="password"
-                                    name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha" required>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div>
-                        <main class="fancy">
-                            <section class="demo">
-
-                                <div class="form-group">
-                                    <label for="tipo" class="pr-1">Escolha o tipo de usuario:</label>
-
-                                    <div class="custom-control-inline">
-                                        <label for="Recebedor">
-                                            <input [(ngModel)]='user.tipo' (change)='tipoUser($event)' id="recebedor" name="yaydio" type="radio"
-                                                value="rec" />
-                                            <span>Recebedor</span>
-                                        </label>
-                                    </div>
-                                    <div class="custom-control-inline">
-                                        <label for="Doador">
-                                            <input [(ngModel)]='user.tipo' (change)='tipoUser($event)' id="doador" name="yaydio" type="radio"
-                                                value="doa" />
-                                            <span>Doador</span>
-                                        </label>
-                                    </div>
-
-
+        <div class="row align-items-center  justify-content-md-center ">
+    
+            <!-- Formulario de cadastro-->
+            <div class="col mt-2">
+    
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-10 vcbg p-3 text-light">
+    
+                        <h2 class="text-center">Cadastro</h2>
+                        <div class="row justify-content-center align-items-center ">
+                            <div class="col-md-6 mr-0">
+                                <div class="form-group atencao">
+    
+                                    <label for="nome">Nome</label>
+                                    <input [(ngModel)]='user.nome' (keyup)='validaNome($event)' class="form-control " type="text" name="myName" id="nome" placeholder="Nome completo"  required >
                                 </div>
-                            </section>
-                        </main>
+                            </div>
+    
+                            <div class="col-md-6 ">
+                                <div class="form-group atencao ">
+                                    <label for="email">Email</label>
+                                    <input [(ngModel)]='user.email' (keyup)='validaEmail($event)' class="form-control " type="text" name="email" id="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="row justify-content-center ">
+                            <div class="col-md-4">
+                                <div class="form-group atencao p-0">
+                                    <label for="foto">Cidade</label>
+                                    <input [(ngModel)]='user.cidade' (keyup)='validaCidade($event)' class="form-control " type="text" name="cidade"
+                                        id="cidade" placeholder="Cidade" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group atencao p-0">
+                                    <label for="foto">Bairro</label>
+                                    <input [(ngModel)]='user.bairro' (keyup)='validaBairro($event)' class="form-control " type="text" name="bairro"
+                                        id="bairro" placeholder="Bairro" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group atencao p-0">
+                                    <label for="foto">Telefone</label>
+                                    <input [(ngModel)]='user.telefone'  class="form-control " type="text" name="telefone"
+                                        id="telefone" placeholder="Telefone" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="col-md-6">
+                                <div class="form-group atencao p-0">
+                                    <label for="senha">Senha</label>
+                                    <input (keyup)='validaSenha($event)' class="form-control " type="password" name="senha"
+                                        id="senha" placeholder="Senha" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group atencao p-0">
+                                    <label for="confirmSenha">Confirmar Senha</label>
+                                    <input [(ngModel)]='user.senha' (keyup)='validaConfirmaSenha($event)' class="form-control " type="password"
+                                        name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha" required>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div>
+                            <main class="fancy">
+                                <section class="demo">
+    
+                                    <div class="form-group">
+                                        <label for="tipo" class="pr-1">Escolha o tipo de usuario:</label>
+    
+                                        <div class="custom-control-inline">
+                                            <label for="Recebedor">
+                                                <input [(ngModel)]='user.tipo' (change)='tipoUser($event)' id="recebedor" name="yaydio" type="radio"
+                                                    value="rec" />
+                                                <span>Recebedor</span>
+                                            </label>
+                                        </div>
+                                        <div class="custom-control-inline">
+                                            <label for="Doador">
+                                                <input [(ngModel)]='user.tipo' (change)='tipoUser($event)' id="doador" name="yaydio" type="radio"
+                                                    value="doa" />
+                                                <span>Doador</span>
+                                            </label>
+                                        </div>
+    
+    
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+    
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="submit" routerLink='/entrar' class="btn btn-danger mr-4">Cancelar</button>
+                            <button type="submit" class="btn text-light" (click)='cadastrar()'>Cadastrar</button>
+                        </div>
+    
                     </div>
-
-                    <div class="d-flex justify-content-center mt-3">
-                        <button type="submit" routerLink='/entrar' class="btn btn-danger mr-4">Cancelar</button>
-                        <button type="submit" class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
-                    </div>
-
                 </div>
+    
             </div>
-
+            <!--/Formulario de cadastro-->
         </div>
-        <!--/Formulario de cadastro-->
     </div>
 </div>
+    
+

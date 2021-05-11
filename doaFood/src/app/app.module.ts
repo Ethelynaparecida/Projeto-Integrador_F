@@ -11,6 +11,10 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { ComunidadeComponent } from './comunidade/comunidade.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { ComunidadeEditComponent } from './edit/comunidade-edit/comunidade-edit.component';
+import { ComunidadeDeleteComponent } from './delete/comunidade-delete/comunidade-delete.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ComunidadeComponent } from './comunidade/comunidade.component';
     MenuComponent,
     RodapeComponent,
     InicioComponent,
-    ComunidadeComponent
+    ComunidadeComponent,
+    PostagemEditComponent,
+    PostagemDeleteComponent,
+    ComunidadeEditComponent,
+    ComunidadeDeleteComponent
   ],
   imports: [
     BrowserModule,
