@@ -29,12 +29,10 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     RodapeComponent,
     InicioComponent,
     ComunidadeComponent,
-
     PostagemEditComponent,
     PostagemDeleteComponent,
     ComunidadeEditComponent,
-    ComunidadeDeleteComponent
-
+    ComunidadeDeleteComponent,
     SobreNosComponent
 
   ],

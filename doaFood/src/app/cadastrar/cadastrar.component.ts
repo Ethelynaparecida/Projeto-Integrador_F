@@ -58,14 +58,14 @@ export class CadastrarComponent implements OnInit {
      }
    }*/
 
-  
+
 
   validaNome(event: any) {
     this.nomeValido = this.validar(event.target.value.length < 2 || event.target.value.length > 100, event)
   }
 
   validaCidade(event: any) {
-    this.cidadeValido = this.validar(event.target.value.length < 2 , event)
+    this.cidadeValido = this.validar(event.target.value.length < 2, event)
   }
 
   validaBairro(event: any) {
@@ -109,41 +109,41 @@ export class CadastrarComponent implements OnInit {
         timer: 2000
       })
     } else {
-      if ( this.emailValido && this.bairroValido && this.cidadeValido && this.senhaValida && this.confirmaSenha) {
+      if (this.emailValido && this.bairroValido && this.cidadeValido && this.senhaValida && this.confirmaSenha) {
 
-      this.user.tipo = this.tipoUsuario
-      this.authService.cadastrar(this.user).subscribe((resp: User) => {
-        this.user = resp
-        Swal.fire({
-          icon: 'success',
-          title: 'Muito bom',
-          text: 'Usuário cadastrado com sucesso',
-          showConfirmButton: false,
-          timer: 1500
+        this.user.tipo = this.tipoUsuario
+        this.authService.cadastrar(this.user).subscribe((resp: User) => {
+          this.user = resp
+          Swal.fire({
+            icon: 'success',
+            title: 'Muito bom',
+            text: 'Usuário cadastrado com sucesso',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          this.router.navigate(['/entrar'])
+
+
+        }, erro => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Ocorreu um erro',
+            text: 'E-mail já cadastrado!',
+            showConfirmButton: false,
+            timer: 1500
+          })
         })
-        this.router.navigate(['/entrar'])
-
-        
-      }, erro => {
+      }
+      else {
         Swal.fire({
           icon: 'error',
           title: 'Ocorreu um erro',
-          text: 'E-mail já cadastrado!',
+          text: 'Preencha os campos corretamente',
           showConfirmButton: false,
-          timer: 1500
+          timer: 2000
         })
-      })
+      }
     }
-      else {
-      Swal.fire({
-        icon: 'error',
-        title: 'Ocorreu um erro',
-        text: 'Preencha os campos corretamente',
-        showConfirmButton: false,
-        timer: 2000
-      })
-    }
-  }
   }
 
 

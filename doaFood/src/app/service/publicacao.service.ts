@@ -22,19 +22,19 @@ export class PublicacaoService {
         return this.http.get<Publicacao[]>('http://localhost:8080/publicacao', this.token)
     }
 
-    getByIdPostagem(id: number): Observable<Publicacao> {
+    getByIdPublicacao(id: number): Observable<Publicacao> {
         return this.http.get<Publicacao>(`http://localhost:8080/publicacao/${id}`, this.token)
     }
 
-    postPostagem(publicacao: Publicacao): Observable<Publicacao> {
+    postPublicacao(publicacao: Publicacao): Observable<Publicacao> {
         return this.http.post<Publicacao>('http://localhost:8080/publicacao', publicacao, this.token)
     }
 
-    putPostagem(publicacao: Publicacao): Observable<Publicacao> {
+    putPublicacao(publicacao: Publicacao): Observable<Publicacao> {
         return this.http.put<Publicacao>('http://localhost:8080/publicacao', publicacao, this.token)
     }
 
-    deletePostagem(id: number) {
+    deletePublicacao(id: number) {
         return this.http.delete(`http://localhost:8080/publicacao/${id}`, this.token)
     }
 }
