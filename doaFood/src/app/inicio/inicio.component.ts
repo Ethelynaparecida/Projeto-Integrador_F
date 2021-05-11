@@ -16,6 +16,7 @@ import { PublicacaoService } from '../service/publicacao.service';
 })
 export class InicioComponent implements OnInit {
 
+
   
   tipo = environment.tipo
   token = environment.token
@@ -49,6 +50,7 @@ export class InicioComponent implements OnInit {
     this.getAllTemas()
     this.getAllPublicacao()
     this.getByIdUser()
+
   }
 
   enviar(){
