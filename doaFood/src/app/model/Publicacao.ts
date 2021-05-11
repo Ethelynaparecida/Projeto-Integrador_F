@@ -1,4 +1,5 @@
 import { Comunidade } from "./Comunidade"
+import { User } from "./User"
 
 export class Publicacao{
     public id: number
@@ -7,5 +8,6 @@ export class Publicacao{
     public descricao: string
     public iscricao: string[]
     public publiComunidade: Comunidade
+    public usuario: User
     
 }

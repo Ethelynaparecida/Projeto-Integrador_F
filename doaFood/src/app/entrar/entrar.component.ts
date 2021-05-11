@@ -34,8 +34,9 @@ entrar(){
     environment.cidade = this.userLogin.cidade
     environment.bairro = this.userLogin.bairro
     environment.telefone = this.userLogin.telefone
+    environment.tipo = this.userLogin.tipo
 
-    console.log(environment.nome)
+    
 
     this.router.navigate(['/inicio'])
   }, erro =>{

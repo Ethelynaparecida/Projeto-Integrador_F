@@ -1,0 +1,31 @@
+.imgLogo{
+    width: 100px;
+    margin: 0;
+}
+
+.bg-grad{
+    background-image: linear-gradient( #acb950, #f4ffdb);
+}
+
+.btn{
+    border: solid #acb950 2px;
+    background-color: #acb950;
+    color: white;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white
+}
+
+h2{
+    Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.titulo{
+    Font-family: Franklin Gothic, Arial Bold;
+}
+
+
+.bg-diferente{
+    background-color: #f4ffdb;
+}

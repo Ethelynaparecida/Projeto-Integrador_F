@@ -4,7 +4,7 @@ import { User } from "./User"
 
 export class Comunidade{
     public id: number
-    public descricao: string
+    public bairro: string
     public nome: string
     public sobre: string
     public publicacao: Publicacao[]
