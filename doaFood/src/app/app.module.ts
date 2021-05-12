@@ -11,6 +11,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { ComunidadeComponent } from './comunidade/comunidade.component';
+import { EditarPerfilTelaLogadaComponent } from './editar-perfil-tela-logada/editar-perfil-tela-logada.component';
+import { UserLoginEditComponent } from './edit/user-login-edit/user-login-edit.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ComunidadeComponent } from './comunidade/comunidade.component';
     MenuComponent,
     RodapeComponent,
     InicioComponent,
-    ComunidadeComponent
+    ComunidadeComponent,
+    EditarPerfilTelaLogadaComponent,
+    UserLoginEditComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,6 @@ export const environment = {
   cidade:'',
   bairro:'',
   telefone:'',
-  email:''
+  email:'',
+  tipo:''
 };
